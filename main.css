@@ -2471,6 +2471,7 @@ input[type=radio].visually-hidden {
     display: none;
   }
   .catalog-hero__filter-wrapp {
+    display: block;
     max-width: 956px;
     margin: 0 auto;
     margin-bottom: 27px;
