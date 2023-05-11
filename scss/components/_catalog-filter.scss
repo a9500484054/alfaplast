@@ -1,0 +1,49 @@
+.filter {
+    background: #5934C2;
+    &__input {
+        padding: 14px 34px;
+        background: #FFFFFF;
+        border-radius: 15px
+    }
+    label {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        /* identical to box height */
+
+
+        color: #FFFFFF;
+        margin-right: 20px;
+    }
+
+    &__btn {
+        width: 204px;
+        height: 49px;
+
+        background: #FFFFFF;
+        border-radius: 15px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 123.7%;
+        /* identical to box height, or 20px */
+
+        text-transform: uppercase;
+
+        color: #5934C2;
+    }
+    &__btn-1 {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        /* identical to box height */
+
+        text-align: right;
+        text-decoration-line: underline;
+
+        color: #FFFFFF;
+    }
+}
+
+@media (min-width: $screen-desktop) {
+    
+}

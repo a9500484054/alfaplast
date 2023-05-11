@@ -1,0 +1,189 @@
+
+.card {
+    padding-top:116px;
+    h2 {
+        margin-bottom: 24px;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 123.7%;
+        /* identical to box height, or 30px */
+
+        text-align: center;
+
+        color: #212022;
+    }
+    &__img {
+        margin-bottom: 24px;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__info {
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 123.7%;
+        /* or 30px */
+
+        text-align: center;
+
+        color: #212022;
+        span {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 123.7%;
+            /* identical to box height, or 30px */
+
+            text-align: center;
+
+            color: #212022;
+        }
+        div {
+            margin-bottom: 10px;
+        }
+    }
+    &__card {
+        max-width: 411px;
+        padding: 37px 30px 29px;
+        background: #FFFFFF;
+        border: 1px solid #5934C2;
+        box-shadow: 3px 4px 6px rgba(174, 168, 168, 0.25);
+        border-radius: 30px;
+        div {
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: 300;
+            font-size: 40px;
+            line-height: 123.7%;
+            /* or 49px */
+
+
+            color: #212022;
+        }
+        a {
+            
+            width: 285px;
+            height: 51px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #5934C2;
+            border-radius: 35px;    
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 123.7%;
+            /* or 22px */
+
+            text-align: center;
+            text-transform: uppercase;
+
+            color: #FFFFFF;
+        }
+    }
+}
+
+@media (min-width: $screen-table) {
+    
+
+}
+
+@media (min-width: $screen-desktop) {
+.card {
+    padding-top:227px;
+    padding-bottom:184px;
+    h2 {
+        text-align: left;
+        margin-bottom: 24px;
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 123.7%;
+        /* or 59px */
+
+        color: #212022;
+    }
+    &__img {
+        margin-bottom: 24px;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__info {
+        margin-left: 67px;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 123.7%;
+        /* or 30px */
+
+        text-align: center;
+
+        color: #212022;
+        span {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 123.7%;
+            /* identical to box height, or 30px */
+
+            text-align: center;
+
+            color: #212022;
+        }
+        div {
+            margin-bottom: 20px;
+        }
+        p {
+            max-width: 600px;
+            text-align: left;
+        }
+    }
+    &__card {
+        margin-left: auto;
+        padding: 74px 30px 29px;
+        background: #FFFFFF;
+        border: 1px solid #5934C2;
+        box-shadow: 3px 4px 6px rgba(174, 168, 168, 0.25);
+        border-radius: 30px;
+        div {
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: 300;
+            font-size: 40px;
+            line-height: 123.7%;
+            /* or 49px */
+
+
+            color: #212022;
+        }
+        a {
+            
+            width: 285px;
+            height: 51px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #5934C2;
+            border-radius: 35px;    
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 123.7%;
+            /* or 22px */
+
+            text-align: center;
+            text-transform: uppercase;
+
+            color: #FFFFFF;
+        }
+    }
+}
+}

@@ -1,0 +1,259 @@
+.about-number {
+    h2 {
+        margin-bottom: 24px;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 123.7%;
+        /* identical to box height, or 30px */
+        text-align: center;
+        text-transform: uppercase;
+        
+        color: #212022;
+    }
+    &__text {
+        margin-bottom: 24px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 123.7%;
+        /* or 22px */
+        
+        text-align: center;
+        text-transform: uppercase;
+        
+        color: #212022;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    li {
+        max-width: 580px;
+        padding-left: 60px;
+        position: relative;
+        margin-bottom: 25px;
+        h3 {
+            margin-bottom: 7px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 123.7%;
+            /* or 22px */
+            
+            text-transform: uppercase;
+            
+            color: #5934C2;
+        }
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 123.7%;
+            /* or 20px */
+            
+            
+            color: #212022;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: -3px;
+            display: block;
+            width: 45px;
+            height: 36px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+    }
+    li:nth-child(1) {
+        &::after {
+            background-image: url(./images/01.png);
+            width: 37px;
+            height: 29px;
+        }
+    }
+    li:nth-child(2) {
+        &::after {
+            background-image: url(./images/02.png);
+            width: 45px;
+            height: 29px;
+        }
+    }
+    li:nth-child(3) {
+        &::after {
+            background-image: url(./images/03.png);
+            width: 45px;
+            height: 29px;
+        }
+    }
+    li:nth-child(4) {
+        &::after {
+            background-image: url(./images/04.png);
+            width: 48px;
+            height: 29px;
+        }
+    }
+    &__block {
+        margin: 0 auto;
+        max-width: 1280px;
+        position: relative;
+        padding: 62px 13px 24px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 123.7%;
+        /* or 22px */
+
+
+        color: #212022;
+
+        background: #FFFFFF;
+        box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.12);
+        border-radius: 30px;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 19px;
+            left: 20px;
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-image: url(./images/ok-icon.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+@media (min-width: $screen-table) {
+    
+
+}
+
+@media (min-width: $screen-desktop) {
+    .about-number {
+        h2 {
+            margin-bottom: 57px;
+            font-weight: 700;
+            font-size: 62px;
+            line-height: 123.7%;
+            /* identical to box height, or 77px */
+            
+            text-align: center;
+            text-transform: uppercase;
+            
+            color: #212022;
+        }
+        &__text {
+            margin-bottom: 57px;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 123.7%;
+            /* or 40px */
+            
+            text-align: center;
+            text-transform: uppercase;
+            
+            color: #212022;
+        }
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        li {
+            padding-left: 160px;
+            position: relative;
+            margin-bottom: 25px;
+            h3 {
+                margin-bottom: 7px;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 123.7%;
+                /* identical to box height, or 30px */
+                
+                text-transform: uppercase;
+                
+                color: #5934C2;
+            }
+            p {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 123.7%;
+                /* or 25px */
+                
+                
+                color: #212022;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 3px;
+                left: -3px;
+                display: block;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+    
+        }
+        li:nth-child(1) {
+            &::after {
+                background-image: url(./images/01.png);
+                width: 143px;
+                height: 114px;
+            }
+        }
+        li:nth-child(2) {
+            &::after {
+                background-image: url(./images/02.png);
+                width: 148px;
+                height: 95px;
+            }
+        }
+        li:nth-child(3) {
+            &::after {
+                background-image: url(./images/03.png);
+                width: 147px;
+                height: 95px;
+            }
+        }
+        li:nth-child(4) {
+            &::after {
+                background-image: url(./images/04.png);
+                width: 161px;
+                height: 95px;
+            }
+        }
+        &__block {
+            position: relative;
+            padding: 17px 42px 17px 73px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 123.7%;
+            /* or 30px */
+
+
+            color: #212022;
+                
+            background: #FFFFFF;
+            box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.12);
+            border-radius: 30px;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 19px;
+                left: 20px;
+                display: block;
+                width: 30px;
+                height: 30px;
+                background-image: url(./images/ok-icon.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.about-text {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    p {
+        margin-bottom: 45px;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 123.7%;
+        /* or 25px */
+
+        color: #212022;
+    }
+}
+
+@media (min-width: $screen-table) {
+    
+    .about-text {
+        padding-top: 50px;
+        padding-bottom: 100px;
+        p {
+            font-weight: 300;
+            font-size: 32px;
+            line-height: 123.7%;
+            /* or 40px */
+            
+            
+            color: #212022;
+        }
+    }
+}
+
+@media (min-width: $screen-desktop) {
+ 
+}

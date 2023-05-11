@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Альфапласт</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300;1,500&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="css/um-icon-style.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="hero__header-logo bg-cirgle">
+                <img class="w-100" src="./images/logo.png" alt="">
+            </a>
+            <div class="menu">
+                <button  type="button" class="menu__btn-close" >
+                    <i class="icon-close"></i>
+                </button>   
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link btn-hover" href="about.html">О нас</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="catalog.html">Каталог</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="news.html">Новости</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="contact.html">Контакты</a></li>
+                </ul>
+                <div class="menu__adrees">
+                    <a href="tel:+74955040605">+7 (495) 504-06-05</a>   
+                </div>
+            </div>
+            <button type="button" class="menu-burger color-green d-flex flex-column justify-content-center align-items-center">
+                <span></span>
+                <span class="my-1"></span>
+                <span></span>
+            </button>
+            <div class="header__adrees">
+                <a href="tel:+74955040605">+7 (495) 504-06-05</a>
+            </div>
+        </div>
+    </header>
+
+<main>
+    <section class="hero" >
+        <div class="container">
+            <div class="hero__text-1">Производство пластиковой тары</div>
+            <h1 class="hero__title">ПЭТ – упаковка для любых видов продукции</h1>
+            <!-- <div class="hero__text-2">Курсы для детей 5-17 лет по разработке, конструированию, прототипированию и программированию роботов</div> -->
+            <ul class="hero__list">
+                <li>ПЭТ – бутылка</li>
+                <li>ПЭТ – банка</li>
+                <li>ПЭТ – флакон</li>
+                <li>ПЭТ – преформа</li>
+                <li>Крышка и колпачок</li>
+                <li>Индивидуальный заказ</li>
+            </ul>
+            <button type="button" class="hero__btn btn-hover btn-js">Связатся с нами</button>
+        </div>
+    </section>
+    
+    <section class="advantages" >
+        <div class="container">
+            <h2 class="advantages__title">Изготавливаем тару под направления</h2>
+            <div class="advantages__slider swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="advantages__card" style="background-image: url(./images/card-section2-1.png)">
+                            <h3>Косметика и парфюмерия</h3>
+                            <p>ПЭТ- флаконы и баночки для косметики – удобное и практичное решение для продажи, хранения и транспортировки косметики: крем, гель для душа, шампунь, лосьон, праймер и других видов.</p>
+                            <a href="#">ПОДРОБНЕЕ</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="advantages__card" style="background-image: url(./images/card-section2-2.png)">
+                            <h3>Кондитерские изделия</h3>
+                            <p>ПЭТ- флаконы и баночки для косметики – удобное и практичное решение для продажи, хранения и транспортировки косметики: крем, гель для душа, шампунь, лосьон, праймер и других видов.</p>
+                            <a href="#">ПОДРОБНЕЕ</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantages__card" style="background-image: url(./images/card-section2-3.png)">
+                            <h3>Напитки и еда</h3>
+                            <p>ПЭТ- флаконы и баночки для косметики – удобное и практичное решение для продажи, хранения и транспортировки косметики: крем, гель для душа, шампунь, лосьон, праймер и других видов.</p>
+                            <a href="#">ПОДРОБНЕЕ</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantages__card" style="background-image: url(./images/card-section2-4.png)">
+                            <h3>Бытовая химия</h3>
+                            <p>ПЭТ- флаконы и баночки для косметики – удобное и практичное решение для продажи, хранения и транспортировки косметики: крем, гель для душа, шампунь, лосьон, праймер и других видов.</p>
+                            <a href="#">ПОДРОБНЕЕ</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantages__card" style="background-image: url(./images/card-section2-5.png)">
+                            <h3>Фармацевтика</h3>
+                            <p>ПЭТ- флаконы и баночки для косметики – удобное и практичное решение для продажи, хранения и транспортировки косметики: крем, гель для душа, шампунь, лосьон, праймер и других видов.</p>
+                            <a href="#">ПОДРОБНЕЕ</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantages__card" style="background-image: url(./images/card-section2-6.png)">
+                            <h3>Игрушки из мелких деталей</h3>
+                            <p>ПЭТ- флаконы и баночки для косметики – удобное и практичное решение для продажи, хранения и транспортировки косметики: крем, гель для душа, шампунь, лосьон, праймер и других видов.</p>
+                            <a href="#">ПОДРОБНЕЕ</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantages__card" style="background-image: url(./images/card-section2-7.png)">
+                            <h3>Спортивное питание</h3>
+                            <p>ПЭТ- флаконы и баночки для косметики – удобное и практичное решение для продажи, хранения и транспортировки косметики: крем, гель для душа, шампунь, лосьон, праймер и других видов.</p>
+                            <a href="#">ПОДРОБНЕЕ</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantages__card" style="background-image: url(./images/card-section2-8.png)">
+                            <h3>Ваша сфера деятельности</h3>
+                            <p>ПЭТ- флаконы и баночки для косметики – удобное и практичное решение для продажи, хранения и транспортировки косметики: крем, гель для душа, шампунь, лосьон, праймер и других видов.</p>
+                            <a href="#">ПОДРОБНЕЕ</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination advantages__pagination"></div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <section class="teachers" id="section2">
+        <div class="container">
+            <h2 class="teachers__title">Каталог с категориями товаров</h2>
+            <div class="teachers__wrap row gy-4 justify-content-center justify-content-lg-between">
+                <div class="col-lg-4 teachers__card pb-4">
+                    <picture>
+                        <img class="" src="./images/card-section3-1.png" alt="фото"/>
+                    </picture>
+                    <div class="">
+                        <h3 class="teachers__card-title">Флаконы</h3>
+                        <a href="#">Смотреть</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 teachers__card pb-4">
+                    <picture>
+                        <img class="" src="./images/card-section3-2.png" alt="фото"/>
+                    </picture>
+                    <div class="">
+                        <h3 class="teachers__card-title">Флаконы</h3>
+                        <a href="#">Смотреть</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 teachers__card pb-4">
+                    <picture>
+                        <img class="" src="./images/card-section3-3.png" alt="фото"/>
+                    </picture>
+                    <div class="">
+                        <h3 class="teachers__card-title">Флаконы</h3>
+                        <a href="#">Смотреть</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 teachers__card pb-4">
+                    <picture>
+                        <img class="" src="./images/card-section3-4.png" alt="фото"/>
+                    </picture>
+                    <div class="">
+                        <h3 class="teachers__card-title">Флаконы</h3>
+                        <a href="#">Смотреть</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 teachers__card pb-4">
+                    <picture>
+                        <img class="" src="./images/card-section3-5.png" alt="фото"/>
+                    </picture>
+                    <div class="">
+                        <h3 class="teachers__card-title">Флаконы</h3>
+                        <a href="#">Смотреть</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 teachers__card pb-4">
+                    <picture>
+                        <img class="" src="./images/card-section3-6.png" alt="фото"/>
+                    </picture>
+                    <div class="">
+                        <h3 class="teachers__card-title">Флаконы</h3>
+                        <a href="#">Смотреть</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="robots">
+        <div class="container">
+            <div class="robots__wrapp">
+                <div class="robots__block-1">
+                    <p>Не нашли подходящей модели? Закажите индивидуальную разработку по собственному эскизу!</p>
+                    <a class="robots__block-1-a" href="#">Заказать разработку</a>
+                </div>
+                <div class="robots__block-2">
+                    <img src="./images/card-section4-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="reviews" id="section4">
+        <div class="container">
+            <h2>Отзывы</h2>
+            <div class="reviews__slider swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="reviews__item">
+                            <div class="">
+                                <h3>Иван</h3>
+                                <p>Все отлично, рекомендую. Большой выбор пэт бутылок и банок.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="reviews__item">
+                            <div class="">
+                                <h3>Мария</h3>
+                                <p>Отличные банки, помогли подобрать, все подсказали, буду брать ещё!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reviews__item">
+                            <div class="">
+                                <h3>Олег</h3>
+                                <p>Отличная производственная компания!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reviews__item">
+                            <div class="">
+                                <h3>Сергей</h3>
+                                <p>Все как в аптеке четко быстро и отличное качество.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reviews__item">
+                            <div class="">
+                                <h3>Владимир</h3>
+                                <p>Был там два раза, персонал вроде приветливый. Проблем никаких не было.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reviews__item">
+                            <div class="">
+                                <h3>Павел</h3>
+                                <p>Самая дешевая продукция и продают мелкими партиями.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination advantages__pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="price" id="section3">
+        <div class="container">
+            <h2>О КОМПАНИИ</h2>
+            <p>ПЭТ-тара от «Альфапласт» - совершенство в деталях 15 лет производим ПЭТ-упаковку для вас</p>
+            <div class="price__wrapp">
+                <div class="price__list">
+                    <ul>
+                        <li>Большой опыт работы</li>
+                        <li>Приятно низкая стоимость</li>
+                        <li>Соблюдаем сроки производства</li>
+                        <li>Воплощаем любые ваши идеи</li>
+                        <li>Высокие стандарты качества</li>
+                    </ul>
+                    <a href="#">О КОМПАНИИ</a>
+                </div>
+                <div class="price__img">
+                    <img src="./images/card-section5-1.jpg" alt="">
+                    <a href="#">О КОМПАНИИ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="schedule" id="section">
+        <div class="container">
+            <h2>Новости и полезные статьи</h2>
+            <div class="reviews__slider swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="schedule__item">
+                            <picture>
+                                <img class="" src="./images/card-section6-1.png" alt="фото"/>
+                            </picture>
+                            <div class="schedule__item-wrapp">
+                                <h3 class="">Преимущества ПЭТ пластиковых бутылок и банок</h3>
+                                <p>ПЭТ-пластиковые бутылки и банки в настоящее время стали незаменимыми в повседневной жизни. Они используются для хранения и транспортировки....</p>
+                                <a href="#">читать</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="schedule__item">
+                            <picture>
+                                <img class="" src="./images/card-section6-1.png" alt="фото"/>
+                            </picture>
+                            <div class="schedule__item-wrapp">
+                                <h3 class="">Преимущества ПЭТ пластиковых бутылок и банок</h3>
+                                <p>ПЭТ-пластиковые бутылки и банки в настоящее время стали незаменимыми в повседневной жизни. Они используются для хранения и транспортировки....</p>
+                                <a href="#">читать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="schedule__item">
+                            <picture>
+                                <img class="" src="./images/card-section6-1.png" alt="фото"/>
+                            </picture>
+                            <div class="schedule__item-wrapp">
+                                <h3 class="">Преимущества ПЭТ пластиковых бутылок и банок</h3>
+                                <p>ПЭТ-пластиковые бутылки и банки в настоящее время стали незаменимыми в повседневной жизни. Они используются для хранения и транспортировки....</p>
+                                <a href="#">читать</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="swiper-pagination advantages__pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="free-feedback" >
+        <div class="container">
+            <h2>Розничная продажа ПЭТ-тары</h2>
+
+            <div class="free-feedback__wrapp">
+                <h3>Закажите продукцию компании в маленьком объёме. Напишите нам желаемые объёмы заказа и номер продукции. Мы проконсультируем вас.</h3>
+                <form action="#" class="free-feedback__form">
+                    <div>
+                        <input type="text" class="form-control" placeholder="Ваше имя">
+                    </div>
+                    <div>
+                        <input type="text" class="form-control" placeholder="Номер телефона">
+                    </div>
+                    <div>
+                        <input type="text" class="form-control" placeholder="Закажите нашу тару на Озон">
+                    </div>
+                    <button class="btn-hover">Заказать</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <div id="myModal" class="modal fade z999" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content modal-fb ">
+                <div class="p-2 mw-50">
+                    <h3>ЗАПИСЬ НА Пробный УРОК</h3>
+                    <form action="">
+                        <!-- Basic Input -->
+                        <select class="form-select" aria-label="Пример выбора по умолчанию">
+                            <option selected>Выбрать адрес</option>
+                            <option value="1">Санкт-Петербург, ул. Маяковского 37В</option>
+                            <option value="2">Санкт-Петербург, ул Кораблестроителей 16,к2</option>
+                        </select>
+                        <div>
+                            <input type="text" class="form-control" placeholder="Ваше имя">
+                        </div>
+                        <div>
+                            <input type="text" class="form-control" placeholder="Номер телефона">
+                        </div>
+                        <div class="d-flex flex-column">
+                            <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#myModal-2" >Отправить заявку</button>
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Отмена</button>
+                        </div>
+                    </form>
+                </div>
+
+
+
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="myModal-2" class="modal fade z999" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content modal-fb ">
+                <div class="w-100 p-2 d-flex justify-content-end">
+                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="text-white h1 p-5 text-center">
+                    Спасибо заявка отправлена
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    <div class="btn-up btn-up_hide"></div>
+    <footer class="footer">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center align-items-lg-start">
+                <div class="footer__block-1">
+                    <a href="index.html">
+                        <img src="./images/logo-footer.png" alt="">
+                    </a>
+                    <p class="footer__text">
+                        Адрес офиса и производства ООО «Альфапласт»: Московская область, Солнечногорский район, Ленинградское шоссе, деревня Поярково, улица Клушинская 2.
+                    </p>
+                </div>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="about.html">О нас</a></li>
+                    <li class="footer__item"><a class="footer__link" href="catalog.html">Каталог</a></li>
+                    <li class="footer__item"><a class="footer__link" href="news.html">Новости</a></li>
+                    <li class="footer__item"><a class="footer__link" href="contact.html">Контакты</a></li>
+                </ul>
+                <div class="mb-57">
+                    <ul class="footer__contact">
+                        <li><a href="tel:+74955040605">+7 (495) 504-06-05</a></li>
+                        <li><a href="mailto:plastbox@mail.ru">plastbox@mail.ru</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="footer__list-2">
+                <li class="footer__item-2 text-center">
+                    <a href="user-agreement.html">Пользовательское соглашение</a>
+                </li>
+                <li class="footer__item-2 text-center">
+                    <a href="cookie-policy.html">ПОЛИТИКА ИСПОЛЬЗОВАНИЯ КУКИ ФАЙЛОВ</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        const btnUp = {
+          el: document.querySelector('.btn-up'),
+          show() {
+            // удалим у кнопки класс btn-up_hide
+            this.el.classList.remove('btn-up_hide');
+          },
+          hide() {
+            // добавим к кнопке класс btn-up_hide
+            this.el.classList.add('btn-up_hide');
+          },
+          addEventListener() {
+            // при прокрутке содержимого страницы
+            window.addEventListener('scroll', () => {
+              // определяем величину прокрутки
+              const scrollY = window.scrollY || document.documentElement.scrollTop;
+              // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
+              scrollY > 400 ? this.show() : this.hide();
+            });
+            // при нажатии на кнопку .btn-up
+            document.querySelector('.btn-up').onclick = () => {
+              // переместим в начало страницы
+              window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+              });
+            }
+          }
+        }
+        btnUp.addEventListener();
+      </script>
+
+</body>
+</html>

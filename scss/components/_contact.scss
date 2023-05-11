@@ -1,0 +1,195 @@
+.contact {
+  padding-top: 40px;
+  h2 {
+    max-width: 1021px;
+    // margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 123.7%;
+    /* or 25px */
+    
+    text-transform: uppercase;
+    
+    color: #212022;
+  }
+  &__text {
+    max-width: 1021px;
+    margin-bottom: 26px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 123.7%;
+    /* or 25px */
+
+
+    color: #212022;
+  }
+  &__list {
+    max-width: 664px;
+    li {
+      margin-bottom: 15px;
+      position: relative;
+      padding-left: 44px;
+        &::after {
+          content: "";
+
+          position: absolute;
+          top: 0px;
+          left: 6px;
+
+          display: block;
+          width: 29px;
+          height: 29px;
+
+          background-repeat: no-repeat;
+          background-size: contain;
+      }
+      a {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 123.7%;
+        /* identical to box height, or 30px */
+        
+        text-align: right;
+        text-transform: uppercase;
+        
+        color: #212022;
+      }
+    }
+    li:nth-child(1) {
+      &::after {
+        background-image: url("./images/icon-phone.png");
+      }
+    }
+    li:nth-child(2) {
+      &::after {
+        background-image: url("./images/icon-phone.png");
+        // background-image: url("./images/nav-icin.png");
+      }
+    }
+    li:nth-child(3) {
+      &::after {
+        background-image: url("./images/time.png");
+      }
+    }
+    a, span {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height */
+
+
+      color: #000000;
+    }
+  }
+  img {
+    width: 29px;
+    height: 29px;
+  }
+  iframe {
+    width: 100% ;
+  }
+}
+
+@media (min-width: $screen-table) {
+    
+}
+
+@media (min-width: $screen-desktop) {
+  .contact {
+    padding-top: 40px;
+    h2 {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 123.7%;
+      /* or 40px */
+      
+      text-transform: uppercase;
+      
+      color: #212022;
+    }
+    &__text {
+      margin-bottom: 26px;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 123.7%;
+      /* or 40px */
+      
+      color: #212022;
+    }
+    &__a {
+      margin-right: 28px;
+    };
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      li {
+        margin-bottom: 40px;
+        position: relative;
+        padding-left: 65px;
+          &::after {
+            content: "";
+  
+            position: absolute;
+            top: -9px;  
+            left: 6px;
+  
+            display: block;
+            width: 42px;
+            height: 42px;
+  
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        a {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 123.7%;
+          /* identical to box height, or 25px */
+  
+          text-align: right;
+  
+          color: #212022;
+        }
+      }
+      li:nth-child(1) {
+        &::after {
+          background-image: url("./images/icon-phone.png");
+        }
+      }
+      li:nth-child(2) {
+        &::after {
+          background-image: url("./images/icon-phone.png");
+          // background-image: url("./images/nav-icin.png");
+        }
+      }
+      li:nth-child(3) {
+        &::after {
+          background-image: url("./images/time.png");
+        }
+      }
+      li:nth-child(4) {
+        margin-right: auto;
+        margin-left: 124px;
+      }
+      a, span {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+  
+  
+        color: #000000;
+      }
+    }
+    img {
+      width: 42px;
+      height: 42px;
+    }
+    iframe {
+      width: 100% ;
+    }
+  }
+
+}

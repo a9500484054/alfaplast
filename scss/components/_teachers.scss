@@ -1,0 +1,124 @@
+.teachers {
+  padding-top: 50px;
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 123.7%;
+    /* or 30px */
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #212022;
+  }
+  &__card {
+    padding: 0;
+    max-width: 413px;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 50px;
+    img {
+        width: 100%;
+    }
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 123.7%;
+      /* or 27px */
+      
+      text-transform: uppercase;
+      
+      color: #212022;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      width: 283px;
+      height: 56px;
+
+      background: #5934C2;
+      border-radius: 29.2373px;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 123.7%;
+      /* or 22px */
+
+      text-transform: uppercase;
+
+      color: #FFFFFF;
+    }
+  }
+}
+
+@media (min-width: $screen-table) {
+    
+}
+
+
+@media (min-width: $screen-desktop) {
+    .teachers {
+        padding-top: 126px;
+        &__title {
+            margin-bottom: 50px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 59px;
+            /* identical to box height */
+            
+            text-transform: uppercase;
+            
+            color: #000000;
+        }
+        &__card {
+          padding: 0;
+          max-width: 413px;
+          margin-bottom: 20px;
+          background: #fff;
+          border-radius: 50px;
+          img {
+              width: 100%;
+          }
+          h3 {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 123.7%;
+            /* identical to box height, or 40px */
+            
+            text-transform: uppercase;
+            
+            color: #212022;
+          }
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 339px;
+            height: 67px;
+      
+            background: #5934C2;
+            border-radius: 29.2373px;
+      
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 123.7%;
+            /* or 22px */
+      
+            text-transform: uppercase;
+      
+            color: #FFFFFF;
+          }
+        }
+      }
+}
+

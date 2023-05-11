@@ -1,0 +1,150 @@
+.advantages {
+    padding-top: 50px;
+    &__title {
+        margin-bottom: 14px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #000000;
+    }
+    &__card {
+        padding: 17px 20px;
+        padding-top: 94px;
+        max-width: 340px;
+        height:  230px;
+        border-radius: 16px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        h3 {
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 17.0672px;
+            line-height: 123.7%;
+            /* or 21px */
+
+            text-transform: uppercase;
+
+            color: #212022;
+        }
+        p {
+            font-weight: 500;
+            font-size: 10.0395px;
+            line-height: 123.7%;
+            /* or 12px */
+
+            color: #212022;
+        }
+        a {
+            position: relative;
+            font-size: 10.0395px;
+            line-height: 123.7%;
+            /* or 12px */
+
+            text-transform: uppercase;
+
+            color: #5934C2;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 2px;
+                right: -46px;
+                display: block;
+                width: 35px;
+                height: 6px;
+                background-image: url(./images/arrow-icon.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+    
+            
+        }
+
+    }
+
+    
+}
+
+@media (min-width: $screen-table) {
+    .advantages {
+
+    }
+    
+}
+
+@media (min-width: $screen-desktop) {
+    .advantages {
+        padding-top: 126px;
+        &__title {
+            margin-bottom: 22px;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 59px;
+            /* identical to box height */
+            
+            text-transform: uppercase;
+            
+            color: #1E1E1E;
+        }
+       
+        &__card {
+            padding: 30px 37px;
+            padding-top: 176px;
+            max-width: 630px;
+            height:  425px;
+            border-radius: 16px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            h3 {
+                margin-bottom: 18px;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 123.7%;
+                /* identical to box height, or 40px */
+                
+                text-transform: uppercase;
+                
+                color: #212022
+            }
+            p {
+                margin-bottom: 36px;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 123.7%;
+                /* or 25px */
+                
+                
+                color: #212022;
+            }
+            a {
+                position: relative;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 123.7%;
+                /* identical to box height, or 25px */
+                
+                text-transform: uppercase;
+                
+                color: #5934C2;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 9px;
+                    right: -68px;
+                    display: block;
+                    width: 47px;
+                    height: 8px;
+                    background-image: url(./images/arrow-icon.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+        
+                }
+            }
+
+        }
+    }
+    
+}
+

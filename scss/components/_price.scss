@@ -1,0 +1,199 @@
+.price {
+    h2 {
+        margin-bottom: 24px;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 123.7%;
+        /* identical to box height, or 30px */
+        text-align: center;
+        text-transform: uppercase;
+        
+        color: #212022;
+    }
+    p {
+        margin-bottom: 24px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 123.7%;
+        /* or 22px */
+        
+        text-align: center;
+        text-transform: uppercase;
+        
+        color: #212022;
+    }
+    a {
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 268px;
+        height: 54px;
+    
+        background: #5934C2;
+        border-radius: 29.2373px;
+    
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 123.7%;
+        /* or 22px */
+    
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+    }
+    &__list {
+        margin-bottom: 40px;
+        li {
+            margin: 0 auto;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 60px;
+            display: flex;
+            align-items: center;
+            width: 345px;
+            height: 63.25px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 123.7%;
+            /* identical to box height, or 20px */
+            
+            background-color: #fff;
+            box-shadow: 0.821429px 3.28571px 6.57143px rgba(0, 0, 0, 0.12);
+            border-radius: 24.6429px;
+            color: #212022;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 19px;
+                left: 20px;
+                display: block;
+                width: 30px;
+                height: 30px;
+                background-image: url(./images/ok-icon.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        a {
+            display: none;
+        }
+    }
+    &__img {
+        img {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+@media (min-width: $screen-table) {
+    
+}
+
+
+@media (min-width: $screen-desktop) {
+    .price {
+        padding-top: 126px;
+        h2 {
+            margin-bottom: 57px;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 62px;
+            line-height: 123.7%;
+            /* identical to box height, or 77px */
+            
+            text-transform: uppercase;
+            
+            color: #212022;
+        }
+        p {
+            margin-bottom: 36px;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 123.7%;
+            /* or 40px */
+            
+            text-align: center;
+            text-transform: uppercase;
+            
+            color: #212022;
+        }
+        a {
+          
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 420px;
+            height: 78px;
+        
+            background: #5934C2;
+            border-radius: 29.2373px;
+        
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 123.7%;
+            /* or 22px */
+        
+            text-transform: uppercase;
+        
+            color: #FFFFFF;
+        }
+        &__wrapp {
+            display: flex
+
+        }
+        &__list {
+            margin-bottom: 0;
+            margin-right: 33px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            li {
+                margin: 0 auto;
+                margin-bottom: 14px;
+                position: relative;
+                padding-left: 60px;
+                display: flex;
+                align-items: center;
+                width: 440px;
+                height: 77px;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 123.7%;
+                /* identical to box height, or 20px */
+                
+                background-color: #fff;
+                box-shadow: 0.821429px 3.28571px 6.57143px rgba(0, 0, 0, 0.12);
+                border-radius: 24.6429px;
+                color: #212022;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 19px;
+                    left: 20px;
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    background-image: url(./images/ok-icon.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+            a {
+                display: flex;
+            }
+        }
+        &__img {
+            img {
+                margin-bottom: 0;
+            }
+            a {
+                display: none;
+            }
+        }
+    }
+}
+

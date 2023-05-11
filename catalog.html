@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Альфапласт</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/um-icon-style.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="hero__header-logo bg-cirgle">
+                <img class="w-100" src="./images/logo.png" alt="">
+            </a>
+            <div class="menu">
+                <button type="button" class="menu__btn-close">
+                    <i class="icon-close"></i>
+                </button>
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link btn-hover" href="about.html">О нас</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="catalog.html">Каталог</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="news.html">Новости</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="contact.html">Контакты</a></li>
+                </ul>
+                <div class="menu__adrees">
+                    <a href="tel:+74955040605">+7 (495) 504-06-05</a>
+                </div>
+            </div>
+            <button type="button"
+                class="menu-burger color-green d-flex flex-column justify-content-center align-items-center">
+                <span></span>
+                <span class="my-1"></span>
+                <span></span>
+            </button>
+            <div class="header__adrees">
+                <a href="tel:+74955040605">+7 (495) 504-06-05</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalog-hero hero">
+            <div class="container">
+                <h1 class="hero__title">КАТАЛОГ ПРОДУКЦИИ</h1>
+                <div class="select" style="background: #fff; border-radius: 10px;">
+                    <input class="select__input" type="hidden" name="">
+                    <div class="select__head">ВСЯ ПРОДУКЦИЯ</div>
+                    <ul class="select__list" style="display: none;">
+                        <li class="select__item" data-id="1">банки</li>
+                        <li class="select__item" data-id="2">БУТЫЛКИ</li>
+                        <li class="select__item" data-id="3">ПРЕФОРМЫ</li>
+                        <li class="select__item" data-id="4">ПЭТ-Преформа для банок</li>
+                        <li class="select__item" data-id="5">ПРЕСС-ФОРМЫ</li>
+                        <li class="select__item" data-id="6">КРЫШКИ</li>
+                    </ul>
+                </div>
+                <button type="button" class="catalog-hero__filter-btn">фильтр</button>
+                <div>
+                    
+                </div>
+                <ul class="catalog-hero__list">
+                    <li><button type="button" class="btn__item" data-id="1">банки</button></li>
+                    <li><button type="button" class="btn__item" data-id="2">БУТЫЛКИ</button></li>
+                    <li><button type="button" class="btn__item" data-id="3">ПРЕФОРМЫ</button></li>
+                    <li><button type="button" class="btn__item" data-id="4">ПЭТ-Преформа для банок</button></li>
+                    <li><button type="button" class="btn__item" data-id="5">ПРЕСС-ФОРМЫ</button></li>
+                    <li><button type="button" class="btn__item" data-id="6">КРЫШКИ</button></li>
+                </ul>
+                <div class="catalog-hero__filter-wrapp">
+                    <div class="mb-3 w-100">
+                        <input class="filter__input w-100" type="text" placeholder="Я ищу ...">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <label for="" class="me-1">Объем</label>
+                            <input class="filter__input" type="text" placeholder="10" style="width: 100px;">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <label for="" class="me-1">Размер</label>
+                            <input class="filter__input" type="text" placeholder="100" style="width: 100px;">
+                        </div>
+                        <input class="filter__input" type="text" placeholder="Горловина в мм." style="width: 200px;">
+                        <input class="filter__input" type="text" placeholder="Поиск по цвету" style="width: 180px;">
+                        <button type="button" class="filter__btn" style=" background-color: #5934C2; color: #fff;">Подобрать</button>
+                    </div>
+                    <div class="mb-3 mt-3 text-end">
+                        <button type="button" class="filter__btn-1" style="color: #000;">Сбросить фильтр</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="filter d-none">
+            <div class="container">
+                <div class="mb-3 w-100">
+                    <input class="filter__input w-100" type="text" placeholder="Я ищу ...">
+                </div>
+                <div class="row mb-3">
+                    <div class="col-6 d-flex align-items-center">
+                        <label for="">Объем</label>
+                        <input class="filter__input" type="text" placeholder="10" style="width: 100px;">
+                    </div>
+                    <div class="col-6 d-flex align-items-center">
+                        <label for="">Размер</label>
+                        <input class="filter__input" type="text" placeholder="100" style="width: 100px;">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <input class="filter__input" type="text" placeholder="Горловина в мм." style="width: 200px;">
+                </div>
+                <div class="mb-3">
+                    <input class="filter__input" type="text" placeholder="Поиск по цвету" style="width: 180px;">
+                </div>
+                <div class="mb-3">
+                    <button type="button" class="filter__btn">Подобрать</button>
+                </div>
+                <div class="mb-3">
+                    <button type="button" class="filter__btn-1">Сбросить фильтр</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="catalog-content catalog-content1" id="1">
+            <div class="container">
+                <h2>банки</h2>
+                <div class="row justify-content-between">
+                    <div class="catalog-content__card col-md-6 col-lg-4 mb-3">
+                        <img src="./images/catalog-card-bank-1.png" alt="">
+                        <h3>Бутылка №1</h3>
+                        <ul>
+                            <li class="me-2">Артикул 0001</li>
+                            <li>Объем 1000мл.</li>
+                        </ul>
+                        <a href="#">от ...</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="catalog-content catalog-content2 d-none" id="2">
+            <div class="container">
+                <h2>БУТЫЛКИ</h2>
+                <div class="row justify-content-between">
+                    <div class="catalog-content__card col-md-6 col-lg-4 mb-3">
+                        <img src="./images/catalog-card-bank-1.png" alt="">
+                        <h3>Бутылка №1</h3>
+                        <ul>
+                            <li class="me-2">Артикул 0001</li>
+                            <li>Объем 1000мл.</li>
+                        </ul>
+                        <a href="#">от ...</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="catalog-content catalog-content3 d-none" id="3">
+            <div class="container">
+                <h2>ПРЕФОРМЫ</h2>
+                <div class="row justify-content-between">
+                    <div class="catalog-content__card col-md-6 col-lg-4 mb-3">
+                        <img src="./images/catalog-card-bank-1.png" alt="">
+                        <h3>Бутылка №1</h3>
+                        <ul>
+                            <li class="me-2">Артикул 0001</li>
+                            <li>Объем 1000мл.</li>
+                        </ul>
+                        <a href="#">от ...</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="catalog-content catalog-content4 d-none" id="4">
+            <div class="container">
+                <h2>ПЭТ-Преформа для банок</h2>
+                <div class="row justify-content-between">
+                    <div class="catalog-content__card col-md-6 col-lg-4 mb-3">
+                        <img src="./images/catalog-card-bank-1.png" alt="">
+                        <h3>Бутылка №1</h3>
+                        <ul>
+                            <li class="me-2">Артикул 0001</li>
+                            <li>Объем 1000мл.</li>
+                        </ul>
+                        <a href="#">от ...</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="catalog-content catalog-content5 d-none" id="5">
+            <div class="container">
+                <h2>пресс-формы</h2>
+                <div class="row justify-content-between">
+                    <div class="catalog-content__card col-md-6 col-lg-4 mb-3">
+                        <img src="./images/catalog-card-bank-1.png" alt="">
+                        <h3>Бутылка №1</h3>
+                        <ul>
+                            <li class="me-2">Артикул 0001</li>
+                            <li>Объем 1000мл.</li>
+                        </ul>
+                        <a href="#">от ...</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="catalog-content catalog-content6 d-none" id="6">
+            <div class="container">
+                <h2>КРЫШКИ</h2>
+                <div class="row justify-content-between">
+                    <div class="catalog-content__card col-md-6 col-lg-4 mb-3">
+                        <img src="./images/catalog-card-bank-1.png" alt="">
+                        <h3>Бутылка №1</h3>
+                        <ul>
+                            <li class="me-2">Артикул 0001</li>
+                            <li>Объем 1000мл.</li>
+                        </ul>
+                        <a href="#">от ...</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+
+    <div class="btn-up btn-up_hide"></div>
+    <footer class="footer">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center align-items-lg-start">
+                <div class="footer__block-1">
+                    <a href="index.html">
+                        <img src="./images/logo-footer.png" alt="">
+                    </a>
+                    <p class="footer__text">
+                        Адрес офиса и производства ООО «Альфапласт»: Московская область, Солнечногорский район,
+                        Ленинградское шоссе, деревня Поярково, улица Клушинская 2.
+                    </p>
+                </div>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="about.html">О нас</a></li>
+                    <li class="footer__item"><a class="footer__link" href="catalog.html">Каталог</a></li>
+                    <li class="footer__item"><a class="footer__link" href="news.html">Новости</a></li>
+                    <li class="footer__item"><a class="footer__link" href="contact.html">Контакты</a></li>
+                </ul>
+                <div class="mb-57">
+                    <ul class="footer__contact">
+                        <li><a href="tel:+74955040605">+7 (495) 504-06-05</a></li>
+                        <li><a href="mailto:plastbox@mail.ru">plastbox@mail.ru</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="footer__list-2">
+                <li class="footer__item-2 text-center">
+                    <a href="user-agreement.html">Пользовательское соглашение</a>
+                </li>
+                <li class="footer__item-2 text-center">
+                    <a href="cookie-policy.html">ПОЛИТИКА ИСПОЛЬЗОВАНИЯ КУКИ ФАЙЛОВ</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        const btnUp = {
+            el: document.querySelector('.btn-up'),
+            show() {
+                // удалим у кнопки класс btn-up_hide
+                this.el.classList.remove('btn-up_hide');
+            },
+            hide() {
+                // добавим к кнопке класс btn-up_hide
+                this.el.classList.add('btn-up_hide');
+            },
+            addEventListener() {
+                // при прокрутке содержимого страницы
+                window.addEventListener('scroll', () => {
+                    // определяем величину прокрутки
+                    const scrollY = window.scrollY || document.documentElement.scrollTop;
+                    // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
+                    scrollY > 400 ? this.show() : this.hide();
+                });
+                // при нажатии на кнопку .btn-up
+                document.querySelector('.btn-up').onclick = () => {
+                    // переместим в начало страницы
+                    window.scrollTo({
+                        top: 0,
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        }
+        btnUp.addEventListener();
+        jQuery(($) => {
+            $('.select').on('click', '.select__head', function () {
+                if ($(this).hasClass('open')) {
+                    $(this).removeClass('open');
+                    $(this).next().fadeOut();
+                } else {
+                    $('.select__head').removeClass('open');
+                    $('.select__list').fadeOut();
+                    $(this).addClass('open');
+                    $(this).next().fadeIn();
+                }
+            });
+
+            $('.select').on('click', '.select__item', function () {
+                $('.select__head').removeClass('open');
+                $(this).parent().fadeOut();
+                $(this).parent().prev().text($(this).text());
+                $(this).parent().prev().prev().val($(this).text());
+            });
+
+            $(document).click(function (e) {
+                if (!$(e.target).closest('.select').length) {
+                    $('.select__head').removeClass('open');
+                    $('.select__list').fadeOut();
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
