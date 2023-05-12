@@ -104,7 +104,7 @@ document.querySelectorAll('.btn__item').forEach(el => {
         document.querySelectorAll('.catalog-content').forEach(el => el.classList.add('d-none'));
         document.querySelector(`.catalog-content${id}`).classList.remove('d-none');
     });
-
+    
 });
 document.querySelectorAll('.select__item').forEach(el => {
     el.addEventListener('click', (event) => { 
@@ -113,5 +113,8 @@ document.querySelectorAll('.select__item').forEach(el => {
         document.querySelectorAll('.catalog-content').forEach(el => el.classList.add('d-none'));
         document.querySelector(`.catalog-content${id}`).classList.remove('d-none');
     });
-
+    
+});
+document.querySelector('.catalog-hero__filter-btn').addEventListener('click', (event) => { 
+    document.querySelector('.filter').classList.toggle('d-none');
 });
