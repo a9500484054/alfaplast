@@ -115,6 +115,3 @@ document.querySelectorAll('.select__item').forEach(el => {
     });
     
 });
-document.querySelector('.catalog-hero__filter-btn').addEventListener('click', (event) => { 
-    document.querySelector('.filter').classList.toggle('d-none');
-});
