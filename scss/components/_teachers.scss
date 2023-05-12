@@ -1,7 +1,7 @@
 .teachers {
-  padding-top: 50px;
+  // padding-top: 50px;
   &__title {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     font-weight: 700;
     font-size: 24px;
     line-height: 123.7%;
@@ -11,6 +11,10 @@
     text-transform: uppercase;
     
     color: #212022;
+  }
+  &__wrap {
+    max-width: 1280px;
+    margin: 0 auto;
   }
   &__card {
     padding: 0;
@@ -64,7 +68,7 @@
 
 @media (min-width: $screen-desktop) {
     .teachers {
-        padding-top: 126px;
+        padding-top: 0;
         &__title {
             margin-bottom: 50px;
             text-align: center;

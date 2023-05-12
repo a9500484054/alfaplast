@@ -150,7 +150,11 @@
             
             color: #212022;
         }
+        &__list {
+            justify-content: center;
+        }
         &__item {
+            margin-right: 5px;
             position: relative;
             height: 289px;
             padding-top: 90px;

@@ -17,6 +17,59 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+
+    const swiper2 = new Swiper('.schedule__slider', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            // when window width is >= 480px
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            1280: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            },
+        },
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        // },
+        navigation: {
+            nextEl: '.swiper-button-schedule-next',
+            prevEl: '.swiper-button-schedule-prev',
+        },
+    });
+    const swiper3 = new Swiper('.advantages__slider', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            // when window width is >= 480px
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+        },
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        // },
+        navigation: {
+            nextEl: '.swiper-button-advantages-next',
+            prevEl: '.swiper-button-advantages-prev',
+        },
+    });
     const swiper1 = new Swiper('.reviews__slider', {
         slidesPerView: 1,
         spaceBetween: 20,
@@ -37,49 +90,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 spaceBetween: 40
             }
         },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
-    const swiper2 = new Swiper('.social__slider', {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        breakpoints: {
-            // when window width is >= 320px
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 20
-            },
-            // when window width is >= 480px
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 30
-            },
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
-    const swiper3 = new Swiper('.advantages__slider', {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        breakpoints: {
-            // when window width is >= 320px
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 20
-            },
-            // when window width is >= 480px
-            1280: {
-                slidesPerView: 2,
-                spaceBetween: 30
-            },
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        // },
+        navigation: {
+            nextEl: '.swiper-button-reviews-next',
+            prevEl: '.swiper-button-reviews-prev',
         },
     });
 });

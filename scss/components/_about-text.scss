@@ -1,6 +1,6 @@
 .about-text {
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    // padding-bottom: 40px;
     p {
         margin-bottom: 45px;
         font-weight: 300;
@@ -10,13 +10,15 @@
 
         color: #212022;
     }
+    span {
+        color: #7334C2;
+    }
 }
 
 @media (min-width: $screen-table) {
     
     .about-text {
         padding-top: 50px;
-        padding-bottom: 100px;
         p {
             font-weight: 300;
             font-size: 32px;
@@ -25,6 +27,10 @@
             
             
             color: #212022;
+        }
+        span {
+            color: #fff;
+            background: #7334C2;
         }
     }
 }

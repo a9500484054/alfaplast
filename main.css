@@ -572,7 +572,7 @@ input[type=radio].visually-hidden {
   }
 }
 .hero {
-  padding-top: 100px;
+  padding-top: 103px;
   padding-bottom: 61px;
   background: url("./images/bg-hero-mob.png");
   background-size: cover;
@@ -584,7 +584,8 @@ input[type=radio].visually-hidden {
 }
 .hero__title {
   max-width: 758px;
-  margin-bottom: 20px;
+  margin: 0 auto;
+  margin-bottom: 22px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -606,12 +607,14 @@ input[type=radio].visually-hidden {
 }
 .hero__list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 24px;
   margin: 0 auto;
+  margin-bottom: 24px;
   max-width: 400px;
 }
 .hero__list li {
+  position: relative;
   padding-left: 20px;
   margin-bottom: 6px;
   width: 166px;
@@ -620,6 +623,18 @@ input[type=radio].visually-hidden {
   line-height: 123.7%;
   /* or 20px */
   color: #000000;
+}
+.hero__list li::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -1px;
+  display: block;
+  width: 14px;
+  height: 15px;
+  background-image: url(./images/Polygon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero__btn {
   margin: 0 auto;
@@ -656,14 +671,14 @@ input[type=radio].visually-hidden {
 }
 @media (min-width: 1280px) {
   .hero {
-    padding-top: 100px;
-    padding-bottom: 61px;
+    padding-top: 174px;
+    padding-bottom: 110px;
     background: url("./images/bg-hero-dest.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
   .hero__title {
-    max-width: 1052px;
+    max-width: 1102px;
     margin: 0 auto;
     margin-bottom: 28px;
     font-weight: 700;
@@ -675,6 +690,7 @@ input[type=radio].visually-hidden {
     color: #000000;
   }
   .hero__text-1 {
+    margin-bottom: 17px;
     font-weight: 300;
     font-size: 32px;
     line-height: 123.7%;
@@ -690,7 +706,6 @@ input[type=radio].visually-hidden {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 24px;
   }
   .hero__list li {
     position: relative;
@@ -726,10 +741,10 @@ input[type=radio].visually-hidden {
   }
 }
 .advantages {
-  padding-top: 50px;
+  padding-top: 40px;
 }
 .advantages__title {
-  margin-bottom: 14px;
+  margin-bottom: 22px;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
@@ -782,13 +797,43 @@ input[type=radio].visually-hidden {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.advantages__slider {
+  padding-bottom: 55px;
+  position: relative;
+}
+
+.cases__wrapper-btn {
+  width: 89px;
+  position: absolute;
+  bottom: 14px;
+  right: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 28.69px;
+  height: 28.69px;
+  background: #4D11A5;
+  border-radius: 50%;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 12px;
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+  color: #fff;
+}
 
 @media (min-width: 1280px) {
   .advantages {
     padding-top: 126px;
   }
   .advantages__title {
-    margin-bottom: 22px;
+    max-width: 766px;
+    margin: 0 auto;
+    margin-bottom: 57 px;
     font-weight: 700;
     font-size: 48px;
     line-height: 59px;
@@ -842,6 +887,31 @@ input[type=radio].visually-hidden {
     background-image: url(./images/arrow-icon.png);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .advantages__slider {
+    padding-bottom: 124px;
+    position: relative;
+  }
+  .cases__wrapper-btn {
+    width: 189px;
+    position: absolute;
+    bottom: 67px;
+    right: 51px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 72px;
+    height: 72px;
+    background: #4D11A5;
+    border-radius: 50%;
+  }
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 24px;
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+    color: #fff;
   }
 }
 .about {
@@ -1005,11 +1075,8 @@ input[type=radio].visually-hidden {
     margin-bottom: 50px;
   }
 }
-.teachers {
-  padding-top: 50px;
-}
 .teachers__title {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   font-weight: 700;
   font-size: 24px;
   line-height: 123.7%;
@@ -1017,6 +1084,10 @@ input[type=radio].visually-hidden {
   text-align: center;
   text-transform: uppercase;
   color: #212022;
+}
+.teachers__wrap {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 .teachers__card {
   padding: 0;
@@ -1058,7 +1129,7 @@ input[type=radio].visually-hidden {
 
 @media (min-width: 1280px) {
   .teachers {
-    padding-top: 126px;
+    padding-top: 0;
   }
   .teachers__title {
     margin-bottom: 50px;
@@ -1108,7 +1179,7 @@ input[type=radio].visually-hidden {
   }
 }
 .robots {
-  padding-top: 50px;
+  padding-top: 20px;
 }
 .robots__wrapp {
   background: #5934C2;
@@ -1127,7 +1198,7 @@ input[type=radio].visually-hidden {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.robots__block-1__block-1-a {
+.robots__block-1-a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1148,9 +1219,38 @@ input[type=radio].visually-hidden {
   width: 100%;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 768px) {
   .robots {
     padding-top: 126px;
+  }
+  .robots__wrapp {
+    max-width: 1280px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    background: #5934C2;
+    border-radius: 30px;
+  }
+  .robots__block-1 {
+    max-width: 400px;
+    padding: 20px;
+  }
+  .robots__block-1 p {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 123.7%;
+    /* or 47px */
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: left;
+  }
+  .robots__block-1-a {
+    margin: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .robots {
+    padding-top: 64px;
   }
   .robots__wrapp {
     max-width: 1280px;
@@ -1266,14 +1366,14 @@ input[type=radio].visually-hidden {
 .price__list a {
   display: none;
 }
+.price__img {
+  text-align: center;
+}
 .price__img img {
   margin-bottom: 24px;
 }
 
 @media (min-width: 1280px) {
-  .price {
-    padding-top: 126px;
-  }
   .price h2 {
     margin-bottom: 57px;
     font-family: "Montserrat";
@@ -1312,6 +1412,8 @@ input[type=radio].visually-hidden {
   }
   .price__wrapp {
     display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
   }
   .price__list {
     margin-bottom: 0;
@@ -1355,6 +1457,7 @@ input[type=radio].visually-hidden {
   }
   .price__img img {
     margin-bottom: 0;
+    height: 100%;
   }
   .price__img a {
     display: none;
@@ -1425,7 +1528,7 @@ input[type=radio].visually-hidden {
 
 @media (min-width: 1280px) {
   .reviews {
-    padding-top: 126px;
+    padding-top: 65px;
   }
   .reviews h2 {
     margin-bottom: 50px;
@@ -1439,6 +1542,7 @@ input[type=radio].visually-hidden {
   .reviews__item {
     padding: 41px 16px;
     max-width: 413px;
+    min-height: 236px;
     border-radius: 30px;
     background: #fff;
   }
@@ -1484,6 +1588,14 @@ input[type=radio].visually-hidden {
     justify-content: space-between;
     padding: 22px;
     border-radius: 0px 0px 20px 20px;
+  }
+  .reviews__slider {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 110px;
+  }
+  .reviews__wrapper-btn {
+    right: -9px;
   }
 }
 .schedule {
@@ -1540,12 +1652,15 @@ input[type=radio].visually-hidden {
   text-transform: uppercase;
   color: #5934C2;
 }
+.schedule__slider {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
 
 @media (min-width: 1280px) {
-  .schedule {
-    padding-top: 126px;
-  }
   .schedule h2 {
+    margin-bottom: 57px;
     font-weight: 700;
     font-size: 62px;
     line-height: 123.7%;
@@ -1594,6 +1709,11 @@ input[type=radio].visually-hidden {
     /* identical to box height, or 15px */
     text-transform: uppercase;
     color: #5934C2;
+  }
+  .schedule__slider {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 110px;
   }
 }
 .contact {
@@ -1824,8 +1944,7 @@ input[type=radio].visually-hidden {
   }
 }
 .about-text {
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding-top: 40px;
 }
 .about-text p {
   margin-bottom: 45px;
@@ -1835,11 +1954,13 @@ input[type=radio].visually-hidden {
   /* or 25px */
   color: #212022;
 }
+.about-text span {
+  color: #7334C2;
+}
 
 @media (min-width: 768px) {
   .about-text {
     padding-top: 50px;
-    padding-bottom: 100px;
   }
   .about-text p {
     font-weight: 300;
@@ -1847,6 +1968,10 @@ input[type=radio].visually-hidden {
     line-height: 123.7%;
     /* or 40px */
     color: #212022;
+  }
+  .about-text span {
+    color: #fff;
+    background: #7334C2;
   }
 }
 .about-adv h2 {
@@ -1967,7 +2092,11 @@ input[type=radio].visually-hidden {
     text-transform: uppercase;
     color: #212022;
   }
+  .about-adv__list {
+    justify-content: center;
+  }
   .about-adv__item {
+    margin-right: 5px;
     position: relative;
     height: 289px;
     padding-top: 90px;

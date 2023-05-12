@@ -1,5 +1,5 @@
 .hero {
-    padding-top: 100px;
+    padding-top: 103px;
     padding-bottom: 61px;
     background:url("./images/bg-hero-mob.png");
     background-size: cover;
@@ -10,7 +10,8 @@
     }
     &__title {
         max-width: 758px;
-        margin-bottom: 20px;
+        margin: 0 auto;
+        margin-bottom: 22px;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
@@ -35,11 +36,13 @@
     }
     &__list {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
-        margin-bottom: 24px;
         margin: 0 auto;
+        margin-bottom: 24px;
         max-width: 400px;
         li {
+            position: relative;
             padding-left: 20px;
             margin-bottom: 6px;
             width: 166px;
@@ -49,6 +52,19 @@
             /* or 20px */
 
             color: #000000;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 4px;
+                left: -1px;
+                display: block;
+                width: 14px;
+                height: 15px;
+                background-image: url(./images/Polygon.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+    
+            }
         }
     }
     &__btn {
@@ -95,13 +111,13 @@
 
 @media (min-width: $screen-desktop) {
     .hero {
-        padding-top: 100px;
-        padding-bottom: 61px;
+        padding-top: 174px;
+        padding-bottom: 110px;
         background:url("./images/bg-hero-dest.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         &__title {
-            max-width: 1052px;
+            max-width: 1102px;
             margin: 0 auto;
             margin-bottom: 28px;
             font-weight: 700;
@@ -115,6 +131,7 @@
             color: #000000;
         }
         &__text-1 {
+            margin-bottom: 17px;
             font-weight: 300;
             font-size: 32px;
             line-height: 123.7%;
@@ -132,7 +149,6 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            margin-bottom: 24px;
             li {
                 position: relative;
                 padding: 0;
