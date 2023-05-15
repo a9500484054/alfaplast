@@ -12,6 +12,7 @@
         color: #212022;
     }
     &__list {
+        margin-bottom: 80px; 
         justify-content: center;
     }
     &__item {
@@ -66,7 +67,60 @@
         text-transform: uppercase;
 
         color: #FFFFFF;
+
     }
+    &__btn-phone {
+        position: relative;
+        padding-left: 30px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 123.7%;
+        /* or 22px */
+
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            display: block;
+            width: 18px;
+            height: 18px;
+            // background-color: #212022;
+            background-image: url('./images/about-phone.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+    }
+    &__btn-mail {
+        position: relative;
+        padding-left: 30px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 123.7%;
+        /* or 22px */
+
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            display: block;
+            width: 20px;
+            height: 16px;
+            // background-color: #212022;
+            background-image: url('./images/about-mail.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    
 
 }
 
@@ -77,6 +131,7 @@
 
 @media (min-width: $screen-desktop) {
     .about-catalog {
+      
         h2 {
             margin-bottom: 57px;
             font-weight: 700;
@@ -90,6 +145,7 @@
             color: #212022;
         }
         &__list {
+            margin-bottom: 80px; 
             justify-content: space-between;
         }
         &__item {

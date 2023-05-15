@@ -66,6 +66,19 @@
             padding: 22px;
             border-radius: 0px 0px 20px 20px;
         }
+        &:hover {
+            background: #5934C2;
+            h3 {
+                color: #fff;
+                &::after {
+                    content: "";
+                    background-image: url(./images/user-icon-hover.png);
+                }
+            }
+            p {
+                color: #fff;
+            }
+        }
     }
 }
 

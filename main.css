@@ -436,7 +436,7 @@ input[type=radio].visually-hidden {
   right: 30px;
 }
 .menu__btn-close i {
-  color: #7C7C7C;
+  color: #fff;
 }
 .menu__title {
   margin-top: 32px;
@@ -493,6 +493,19 @@ input[type=radio].visually-hidden {
 
 .menu--active {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #5934C2 !important;
+}
+.menu--active .menu__list {
+  text-align: center;
+}
+.menu--active .menu__adrees {
+  margin: 0;
+  padding: 0;
+}
+.menu--active a {
+  color: #fff;
 }
 
 .menu-burger {
@@ -553,6 +566,8 @@ input[type=radio].visually-hidden {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
+    max-width: 627px;
+    margin: 0 auto;
   }
   .menu__link {
     font-family: "Montserrat";
@@ -566,6 +581,19 @@ input[type=radio].visually-hidden {
   }
   .menu__adrees {
     display: none;
+  }
+  .menu--active {
+    background: transparent !important;
+  }
+  .menu--active .menu__list {
+    text-align: center;
+  }
+  .menu--active .menu__adrees {
+    margin: 0;
+    padding: 0;
+  }
+  .menu--active a {
+    color: #000000;
   }
   .menu-burger {
     display: none !important;
@@ -666,7 +694,6 @@ input[type=radio].visually-hidden {
   }
   .hero__header-logo {
     width: 190px;
-    height: 58px;
   }
 }
 @media (min-width: 1280px) {
@@ -1525,6 +1552,19 @@ input[type=radio].visually-hidden {
   padding: 22px;
   border-radius: 0px 0px 20px 20px;
 }
+.reviews__item:hover {
+  background: #5934C2;
+}
+.reviews__item:hover h3 {
+  color: #fff;
+}
+.reviews__item:hover h3::after {
+  content: "";
+  background-image: url(./images/user-icon-hover.png);
+}
+.reviews__item:hover p {
+  color: #fff;
+}
 
 @media (min-width: 1280px) {
   .reviews {
@@ -1651,6 +1691,11 @@ input[type=radio].visually-hidden {
   /* identical to box height, or 15px */
   text-transform: uppercase;
   color: #5934C2;
+  transition-duration: 0.5s;
+}
+.schedule__item-wrapp a:hover {
+  background: #5934C2;
+  color: #fff;
 }
 .schedule__slider {
   max-width: 1280px;
@@ -1718,6 +1763,7 @@ input[type=radio].visually-hidden {
 }
 .contact {
   padding-top: 40px;
+  margin-bottom: 1px;
 }
 .contact h2 {
   max-width: 1021px;
@@ -1793,6 +1839,7 @@ input[type=radio].visually-hidden {
 @media (min-width: 1280px) {
   .contact {
     padding-top: 40px;
+    margin-bottom: 170px;
   }
   .contact h2 {
     font-weight: 600;
@@ -1847,6 +1894,9 @@ input[type=radio].visually-hidden {
   }
   .contact__list li:nth-child(2)::after {
     background-image: url("./images/icon-phone.png");
+  }
+  .contact__list li:nth-child(3) {
+    margin-top: 12px;
   }
   .contact__list li:nth-child(3)::after {
     background-image: url("./images/time.png");
@@ -2096,7 +2146,7 @@ input[type=radio].visually-hidden {
     justify-content: center;
   }
   .about-adv__item {
-    margin-right: 5px;
+    margin-right: 20px;
     position: relative;
     height: 289px;
     padding-top: 90px;
@@ -2132,6 +2182,15 @@ input[type=radio].visually-hidden {
     background-image: url(./images/about-icon-1.png);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .about-adv__item:nth-child(3) {
+    margin-right: 0;
+  }
+  .about-adv__item:nth-child(5) {
+    margin-left: 20px;
+  }
+  .about-adv__item:nth-child(5) {
+    margin-right: 0;
   }
   .about-adv__block {
     margin: 0 auto;
@@ -2209,25 +2268,38 @@ input[type=radio].visually-hidden {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.about-number li:nth-child(1) {
+  order: 1;
+}
 .about-number li:nth-child(1)::after {
   background-image: url(./images/01.png);
   width: 37px;
   height: 29px;
+}
+.about-number li:nth-child(2) {
+  order: 3;
 }
 .about-number li:nth-child(2)::after {
   background-image: url(./images/02.png);
   width: 45px;
   height: 29px;
 }
+.about-number li:nth-child(3) {
+  order: 2;
+}
 .about-number li:nth-child(3)::after {
   background-image: url(./images/03.png);
   width: 45px;
   height: 29px;
 }
+.about-number li:nth-child(4) {
+  order: 4;
+}
 .about-number li:nth-child(4)::after {
   background-image: url(./images/04.png);
   width: 48px;
   height: 29px;
+  left: -12px;
 }
 .about-number__block {
   margin: 0 auto;
@@ -2316,8 +2388,8 @@ input[type=radio].visually-hidden {
   }
   .about-number li:nth-child(1)::after {
     background-image: url(./images/01.png);
-    width: 143px;
-    height: 114px;
+    width: 129px;
+    height: 100px;
   }
   .about-number li:nth-child(2)::after {
     background-image: url(./images/02.png);
@@ -2371,6 +2443,7 @@ input[type=radio].visually-hidden {
   color: #212022;
 }
 .about-catalog__list {
+  margin-bottom: 80px;
   justify-content: center;
 }
 .about-catalog__item {
@@ -2419,6 +2492,50 @@ input[type=radio].visually-hidden {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+.about-catalog__btn-phone {
+  position: relative;
+  padding-left: 30px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 123.7%;
+  /* or 22px */
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.about-catalog__btn-phone::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url("./images/about-phone.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-catalog__btn-mail {
+  position: relative;
+  padding-left: 30px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 123.7%;
+  /* or 22px */
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.about-catalog__btn-mail::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 20px;
+  height: 16px;
+  background-image: url("./images/about-mail.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 @media (min-width: 1280px) {
   .about-catalog h2 {
@@ -2432,6 +2549,7 @@ input[type=radio].visually-hidden {
     color: #212022;
   }
   .about-catalog__list {
+    margin-bottom: 80px;
     justify-content: space-between;
   }
   .about-catalog__item {
@@ -2876,9 +2994,17 @@ input[type=radio].visually-hidden {
   color: #5934C2;
   border: 1px solid #5934C2;
   border-radius: 35px;
+  transition-duration: 0.5s;
+}
+.news button:hover {
+  background: #5934C2;
+  color: #fff;
 }
 
 @media (min-width: 1280px) {
+  .news {
+    margin-bottom: 85px;
+  }
   .news h2 {
     margin-top: 50px;
     margin-bottom: 50px;

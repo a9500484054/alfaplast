@@ -1,5 +1,6 @@
 .contact {
   padding-top: 40px;
+  margin-bottom: 1px;
   h2 {
     max-width: 1021px;
     // margin-bottom: 20px;
@@ -98,6 +99,7 @@
 @media (min-width: $screen-desktop) {
   .contact {
     padding-top: 40px;
+    margin-bottom: 170px;
     h2 {
       font-weight: 600;
       font-size: 32px;
@@ -165,6 +167,7 @@
         }
       }
       li:nth-child(3) {
+        margin-top: 12px;
         &::after {
           background-image: url("./images/time.png");
         }

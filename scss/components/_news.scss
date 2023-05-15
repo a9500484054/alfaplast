@@ -29,6 +29,11 @@
     color: #5934C2;
     border: 1px solid #5934C2;
     border-radius: 35px;
+    transition-duration: .5s;
+    &:hover{
+      background: #5934C2;
+      color: #fff;
+    }
   }
 }
 
@@ -38,6 +43,7 @@
 
 @media (min-width: $screen-desktop) {
     .news {
+      margin-bottom: 85px;
         h2 {
           margin-top: 50px;
           margin-bottom: 50px;
