@@ -70,10 +70,12 @@
     .teachers {
         padding-top: 0;
         &__title {
-            margin-bottom: 50px;
+            max-width: 887px;
+            margin: 0 auto;
+            margin-bottom: 57px;
             text-align: center;
-            font-weight: 700;
-            font-size: 38px;
+            font-weight: normal;
+            font-size: 62px;
             line-height: 59px;
             /* identical to box height */
             

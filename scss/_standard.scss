@@ -319,7 +319,7 @@
             border-radius: 30px;
             h3 {
                 margin-bottom: 36px;
-                font-weight: 700;
+                font-weight: normal;
                 font-size: 34px;
                 line-height: 123.7%;
                 /* or 42px */
@@ -328,6 +328,7 @@
                 text-transform: uppercase;
                 
                 color: #FFFFFF;
+                max-width: 975px;
             }
         }
         &__form {
