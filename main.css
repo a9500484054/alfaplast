@@ -1746,7 +1746,8 @@ input[type=radio].visually-hidden {
   .schedule h2 {
     margin-bottom: 57px;
     font-weight: 700;
-    font-size: 38px;
+    font-weight: normal;
+    font-size: 62px;
     line-height: 123.7%;
     /* identical to box height, or 77px */
     text-transform: uppercase;
@@ -3901,8 +3902,8 @@ input[type=radio].visually-hidden {
   }
   .free-feedback h2 {
     margin-bottom: 57px;
-    font-weight: 700;
-    font-size: 38px;
+    font-weight: normal;
+    font-size: 62px;
     line-height: 123.7%;
     /* identical to box height, or 77px */
     text-transform: uppercase;
@@ -4023,4 +4024,7 @@ input[type=radio].visually-hidden {
     line-height: 30px;
     color: #212022;
   }
+}
+.scale:hover {
+  transform: scale(1.2);
 }/*# sourceMappingURL=main.css.map */

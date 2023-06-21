@@ -302,8 +302,8 @@
         padding: 35px 0 55px;
         h2 {
             margin-bottom: 57px;
-            font-weight: 700;
-           font-size: 38px;
+            font-weight: normal;
+            font-size: 62px;
             line-height: 123.7%;
             /* identical to box height, or 77px */
             
@@ -444,4 +444,8 @@
         }
     }
     
+}
+
+.scale:hover {
+    transform: scale(1.2);
 }
