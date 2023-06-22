@@ -132,3 +132,4 @@ document.querySelectorAll('.select__item').forEach(el => {
     });
     
 });
+

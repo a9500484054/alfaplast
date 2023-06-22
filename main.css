@@ -3490,6 +3490,54 @@ input[type=radio].visually-hidden {
     margin: 0;
   }
 }
+.anima {
+  display: none;
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+}
+.anima-item {
+  position: absolute;
+  transition-duration: 0.5s;
+}
+.anima1 {
+  left: -121px;
+  bottom: 10px;
+  z-index: 99;
+}
+.anima2 {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+.anima3 {
+  top: 10px;
+  left: -174px;
+}
+.anima4 {
+  right: -149px;
+  top: 10px;
+}
+.anima .text1 {
+  font-size: 62px;
+  left: 36%;
+  transform: translateX(-50%);
+  top: 96px;
+  z-index: -1;
+}
+.anima .text2 {
+  font-size: 62px;
+  left: 34%;
+  transform: translateX(-50%);
+  top: 352px;
+  z-index: -1;
+}
+
+@media (min-width: 1280px) {
+  .anima {
+    display: block;
+  }
+}
 .footer {
   position: relative;
   background: #221056;

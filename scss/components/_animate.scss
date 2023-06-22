@@ -1,0 +1,52 @@
+
+
+.anima {
+  display: none;
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+  &-item {
+    position: absolute;
+    transition-duration: .5s;
+   
+  }
+  &1 {
+    left : -121px;
+    bottom: 10px;
+    z-index: 99;  
+  }
+  &2 {
+
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+  &3 {
+    top:10px;
+    left : -174px;
+  }
+  &4 {
+    right: -149px;
+    top:10px;
+  }
+  .text1 {
+    font-size: 62px;
+    left: 36%;
+    transform: translateX(-50%);
+    top: 96px;
+    z-index: -1;
+  }
+  .text2 {
+    font-size: 62px;
+    left: 34%;
+    transform: translateX(-50%);
+    top: 352px;
+    z-index: -1;
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .anima {
+    display: block;
+  }
+}
