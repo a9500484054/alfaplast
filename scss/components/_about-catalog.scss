@@ -131,7 +131,12 @@
 
 @media (min-width: $screen-desktop) {
     .about-catalog {
-      
+        a{
+            font-size: 24px;
+            &::after {
+                top: 5px
+            }
+        }
         h2 {
             margin-bottom: 57px;
             font-weight: 700;

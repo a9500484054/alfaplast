@@ -196,7 +196,7 @@
                         <img class="" src="./images/card-section3-6.png" alt="фото"/>
                     </picture>
                     <div class="">
-                        <h3 class="teachers__card-title">Пресс- формы</h3>
+                        <h3 class="teachers__card-title">Пресс-формы</h3>
                         <a class="btn-hover" href="catalog.html">Смотреть</a>
                     </div>
                 </div>
@@ -206,10 +206,10 @@
 
     <section class="robots">
         <div class="container">
-            <div class="robots__wrapp wow fadeInUp">
+            <div class="robots__wrapp robots__wrapp-bg wow fadeInUp">
                 <div class="robots__block-1 robots__block-1-100 ">
                     <p class="wow fadeInUp">Не нашли подходящей модели?<br> Закажите индивидуальную разработку по собственному эскизу!</p>
-                    <a class="robots__block-1-a btn-hover wow fadeInUp" href="#">Заказать разработку</a>
+                    <a class="robots__block-1-a btn-hover wow fadeInUp" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Заказать разработку</a>
                 </div>
             </div>
         </div>
@@ -375,7 +375,10 @@
                         <input type="text" class="form-control" placeholder="Номер телефона">
                     </div>
                     <div>
-                        <input type="text" class="form-control" placeholder="Закажите нашу тару на Озон">
+                        <input type="text" class="form-control" placeholder="Опишите ваш заказ">
+                    </div>
+                    <div class="text-center">
+                        <a href="https://www.ozon.ru/seller/alfaplast-600322/products/?miniapp=seller_600322" style="color: #fff; text-decoration: underline;">Закажите нашу тару на Озон</a>
                     </div>
                     <button class="btn-hover">Заказать</button>
                 </form>
@@ -385,26 +388,22 @@
 </main>
 
     <div id="myModal" class="modal fade z999" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog ">
             <div class="modal-content modal-fb ">
                 <div class="p-2 mw-50">
-                    <h3>ЗАПИСЬ НА Пробный УРОК</h3>
+                    <h3>Оставьте свои контакты, мы с вами свяжемся для обсуждения деталей </h3>
                     <form action="">
-                        <!-- Basic Input -->
-                        <select class="form-select" aria-label="Пример выбора по умолчанию">
-                            <option selected>Выбрать адрес</option>
-                            <option value="1">Санкт-Петербург, ул. Маяковского 37В</option>
-                            <option value="2">Санкт-Петербург, ул Кораблестроителей 16,к2</option>
-                        </select>
                         <div>
                             <input type="text" class="form-control" placeholder="Ваше имя">
                         </div>
                         <div>
                             <input type="text" class="form-control" placeholder="Номер телефона">
                         </div>
-                        <div class="d-flex flex-column">
-                            <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#myModal-2" >Отправить заявку</button>
-                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Отмена</button>
+                        <div class="mb-4">
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="d-flex flex-column mt-4">
+                            <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#myModal-2" >Отправить</button>
                         </div>
                     </form>
                 </div>

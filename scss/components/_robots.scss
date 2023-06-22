@@ -24,7 +24,10 @@
       
       color: #FFFFFF;
     }
-    
+    &-100 {
+      max-width: 100%;
+      width: 100%;
+    }
   }
   &__block-1-a {
     display: flex;
@@ -80,7 +83,10 @@
         color: #FFFFFF;
         text-align: left;
       }
-
+      &-100 {
+        max-width: 100%;
+        width: 100%;
+      }
       
     }
     &__block-1-a {
