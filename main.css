@@ -392,6 +392,11 @@ input[type=radio].visually-hidden {
     line-height: 76px;
   }
 }
+@media (min-width: 1280px) {
+  body {
+    background: linear-gradient(90deg, #DFE7F6 0%, #FFF 100%);
+  }
+}
 .header {
   position: fixed;
   top: 0;

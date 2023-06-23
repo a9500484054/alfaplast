@@ -97,6 +97,8 @@ input[type="radio"].visually-hidden {
 
   
 @media (min-width: $screen-desktop) {
-
+  body {
+    background: linear-gradient(90deg, #DFE7F6 0%, #FFF 100%);
+  }
 }
   

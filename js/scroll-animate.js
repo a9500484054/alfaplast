@@ -38,7 +38,8 @@ function handleScroll() {
         img1.style.left = '36%';
         img1.style.bottom = '165px';
         img2.style.bottom = '112px';
-        img3.style.left = '38%';
+        img3.style.left = '50%';
+        img3.style.transform = 'translateX(-50%)';
         img3.style.top = '150px';
         img4.style.right = '38%';
         img4.style.top = '219px';
