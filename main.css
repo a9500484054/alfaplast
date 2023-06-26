@@ -1102,6 +1102,15 @@ input[type=radio].visually-hidden {
   margin-top: 15px;
 }
 
+.robots__ul {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .robots__ul {
+    text-align: left;
+  }
+}
 @media (min-width: 1280px) {
   .about {
     padding-top: 60px;
@@ -1295,12 +1304,12 @@ input[type=radio].visually-hidden {
     border-radius: 30px;
   }
   .robots__block-1 {
-    max-width: 400px;
+    max-width: 50%;
     padding: 20px;
   }
   .robots__block-1 p {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 28px;
     line-height: 123.7%;
     /* or 47px */
     text-transform: uppercase;

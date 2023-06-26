@@ -154,8 +154,13 @@
     }
 }
 
+.robots__ul {
+    text-align: center;
+}
 @media (min-width: $screen-table) {
-
+    .robots__ul {
+        text-align: left;
+    }
 }
 
 @media (min-width: $screen-desktop) {
@@ -188,3 +193,4 @@
         }
     }
 }
+
