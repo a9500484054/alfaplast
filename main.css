@@ -2948,7 +2948,7 @@ input[type=radio].visually-hidden {
   /* identical to box height, or 20px */
   color: #212022;
 }
-.catalog-content__card a {
+.catalog-content__card span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3011,7 +3011,7 @@ input[type=radio].visually-hidden {
     /* identical to box height, or 30px */
     color: #212022;
   }
-  .catalog-content__card a {
+  .catalog-content__card span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3540,7 +3540,7 @@ input[type=radio].visually-hidden {
 
 @media (min-width: 1280px) {
   .anima {
-    display: block;
+    display: none;
   }
 }
 .footer {
