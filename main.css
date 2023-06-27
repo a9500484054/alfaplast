@@ -414,7 +414,7 @@ input[type=radio].visually-hidden {
 }
 .header__adrees a {
   font-weight: 500;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 123.7%;
   /* or 37px */
   text-align: right;
@@ -1493,7 +1493,7 @@ input[type=radio].visually-hidden {
     color: #212022;
   }
   .price p {
-    max-width: 981px;
+    max-width: 1028px;
     margin: 0 auto;
     margin-bottom: 36px;
     font-weight: 400;
