@@ -1456,6 +1456,29 @@ input[type=radio].visually-hidden {
   margin-bottom: 24px;
 }
 
+@media (min-width: 768px) {
+  .price h2 {
+    margin-bottom: 24px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 123.7%;
+    /* identical to box height, or 30px */
+    text-align: center;
+    text-transform: uppercase;
+    color: #212022;
+  }
+  .price p {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 123.7%;
+    /* or 22px */
+    text-align: center;
+    text-transform: uppercase;
+    color: #212022;
+  }
+}
 @media (min-width: 1280px) {
   .price h2 {
     margin-bottom: 57px;
