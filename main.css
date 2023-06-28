@@ -1759,6 +1759,7 @@ input[type=radio].visually-hidden {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
+  min-height: 90px;
   color: #212022;
 }
 .schedule__item-wrapp a {
@@ -1823,6 +1824,7 @@ input[type=radio].visually-hidden {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
+    min-height: 90px;
     color: #212022;
   }
   .schedule__item-wrapp a {
@@ -3643,7 +3645,7 @@ input[type=radio].visually-hidden {
   text-transform: lowercase;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1400px) {
   .footer {
     padding-bottom: 0;
     position: relative;
